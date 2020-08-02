@@ -19,11 +19,6 @@ def activity_notification(expenditure, d):
         insort_left(sorted_expenditures, expenditure[i])
     return notification_count
 
-# def determine_median(expenditures, d):
-#     expenditures.sort()
-#     if d % 2 == 0:
-#         return (expenditures[d//2-1] + expenditures[d//2]) / 2
-#     return expenditures[d//2]
 
 
 if __name__ == '__main__':
