@@ -13,7 +13,7 @@ def largest_rectangle(h):
         new_building_size = min(new_plan) * len(new_plan)
         if largest_building < new_building_size:
             largest_building = new_building_size
-
+8
     return largest_building
 
 
