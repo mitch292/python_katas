@@ -1,0 +1,19 @@
+class Node:
+      def __init__(self,info): 
+          self.info = info  
+          self.left = None  
+          self.right = None 
+
+ancestors = {}
+
+def lca(root, v1, v2):
+    if root is None:
+        return None
+    
+    if root.info < v1 and root.info < v2:
+        return lca(root.right, v1, v2)
+    
+    if root.info > v1 and root.info > v2:
+        return lca(root.left, v1, v2)
+    
+    return root
